@@ -18,26 +18,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="portfolio-header">
+    <header>
+      <!-- логотип, вкладки, контакты -->
+
       <div class="container header">
-        <nav>
-          <!-- логотип, вкладки, контакты -->
-          <a href="./index.html" class="logo"
+        <nav class="navigation">
+          <a href="./index.html" class="link logo"
             >Web<span class="logo-accent">Studio</span></a
           >
           <ul class="site-nav">
-            <li><a href="./" class="button-secondary">Студия</a></li>
-            <li>
-              <a href="./portfolio.html" class="primery-nav">Портфолио</a>
+            <li class="site-nav-list">
+              <a href="./" class="link button-secondary">Студия</a>
             </li>
-            <li><a href="" class="button-secondary">Контакты</a></li>
+            <li class="site-nav-list">
+              <a href="./portfolio.html" class="link primery-nav">Портфолио</a>
+            </li>
+            <li class="site-nav-list">
+              <a href="" class="link button-secondary">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li>
+          <li class="contacts-list">
             <a href="mailto:info@devstudio.com" class="link contacts-mail-tel">
               <svg class="mail">
                 <use href="./img/symbol-defs.svg#envelope"></use>
@@ -45,7 +50,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts-list">
             <a class="link contacts-mail-tel" href="tel:+380991111111">
               <svg class="mail">
                 <use href="./img/symbol-defs.svg#smartphone"></use>
@@ -56,27 +61,29 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="main">
       <!-- главная секция -->
 
-      <section class="button-list">
-        <div class="button-menu container">
+      <section class="button-section">
+        <div class="button-container container">
           <h1>Наши работы</h1>
-          <ul class="button">
-            <li>
-              <button type="button" class="row-button">Все</button>
+          <ul class="button-titel">
+            <li class="button-list">
+              <button type="button" class="button row-button">Все</button>
             </li>
-            <li>
-              <button type="button" class="row-button">Веб-сайты</button>
+            <li class="button-list">
+              <button type="button" class="button row-button">Веб-сайты</button>
             </li>
-            <li>
-              <button type="button" class="row-button">Приложения</button>
+            <li class="button-list">
+              <button type="button" class="button row-button">
+                Приложения
+              </button>
             </li>
-            <li>
-              <button type="button" class="row-button">Дизайн</button>
+            <li class="button-list">
+              <button type="button" class="button row-button">Дизайн</button>
             </li>
-            <li>
-              <button type="button" class="row-button">Маркетинг</button>
+            <li class="button-list">
+              <button type="button" class="button row-button">Маркетинг</button>
             </li>
           </ul>
 
@@ -244,7 +251,7 @@
               <input class="foter-input" type="email" placeholder="E-mail" />
             </label>
 
-            <button class="button-subscribe" type="submit">
+            <button class="button button-subscribe" type="submit">
               <svg class="footer-subscribe-svg" widt="24px" height="24px">
                 <use href="./img/symbol-defs.svg#send"></use>
               </svg>
