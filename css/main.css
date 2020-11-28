@@ -25,6 +25,7 @@ header {
   height: 80px;
   padding-bottom: 32px;
   padding-top: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 a {
@@ -366,7 +367,7 @@ ul {
   background-size: cover;
 }
 
-.main-titel {
+.main-title {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
